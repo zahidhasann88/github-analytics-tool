@@ -14,7 +14,7 @@ This tool allows you to fetch and analyze data from GitHub repositories. You can
    npm install
    ```
 
-3.Set up your GitHub token:
+3. Set up your GitHub token:
    Create a .env file in the root directory
    Add your GitHub token:
    ```bash
@@ -22,26 +22,26 @@ This tool allows you to fetch and analyze data from GitHub repositories. You can
    ```
 
 ## Usage
-Fetching Data
-Fetching Repository Details
+### Fetching Data
+#### Fetching Repository Details
     ```bash
     npx ts-node src/index.ts --owner <owner> --repo <repo> --details
     ```
 
-Fetching Repository Contributors
+#### Fetching Repository Contributors
     ```bash
     npx ts-node src/index.ts --owner <owner> --repo <repo> --contributors
     ```
 
-Fetching Repository Issues
+#### Fetching Repository Issues
     ```bash
     npx ts-node src/index.ts --owner <owner> --repo <repo> --issues
     ```
-Fetching Repository Commit History
+#### Fetching Repository Commit History
     ```bash
     npx ts-node src/index.ts --owner <owner> --repo <repo> --commits
     ```
-Fetching Multiple Data Types Simultaneously
+#### Fetching Multiple Data Types Simultaneously
     ```bash
     npx ts-node src/index.ts --owner <owner> --repo <repo> --details --contributors --issues --commits
     ```
@@ -50,7 +50,7 @@ Fetching Multiple Data Types Simultaneously
     ```bash
     npx ts-node src/index.ts --owner <owner> --repo <repo> --details --export output.csv
     ```
-# Exporting to Json
+### Exporting to Json
     ```bash
     npx ts-node src/index.ts --owner <owner> --repo <repo> --details --export json
     ```
@@ -62,23 +62,23 @@ Fetching Multiple Data Types Simultaneously
     ```
 
 ## API Endpoint
-The tool uses GitHub's API endpoint:
+#### The tool uses GitHub's API endpoint:
     ```bash
     https://api.github.com
     ```
-Additional Commands
-Linting TypeScript Files
+## Additional Commands
+#### Linting TypeScript Files
 ```bash
 npm run lint
 ```
-Running Tests (Jest)
+#### Running Tests (Jest)
 ```bash
 npx jest
 ```
 
-Notes
-Ensure your GitHub token is properly set in the .env file for authentication.
-Replace <repository-url>, <owner>, <repo>, and your-github-token with your actual repository URL, GitHub owner, repository name, and GitHub token respectively.
+## Notes
+### Ensure your GitHub token is properly set in the .env file for authentication.
+#### Replace <repository-url>, <owner>, <repo>, and your-github-token with your actual repository URL, GitHub owner, repository name, and GitHub token respectively.
 
 ```bash
 This README.md file provides comprehensive instructions for installation, usage, API endpoint details, additional commands for linting and testing, and notes for configuring the GitHub token. Adjust the placeholders `<repository-url>`, `<owner>`, `<repo>`, and `your-github-token` with your specific repository information and token.
