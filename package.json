@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "lint": "eslint .",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -16,9 +20,13 @@
     "winston": "^3.13.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.7.0",
     "@types/commander": "^2.12.2",
     "@types/node": "^20.14.10",
+    "eslint": "^9.6.0",
+    "globals": "^15.8.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.0"
   }
 }
