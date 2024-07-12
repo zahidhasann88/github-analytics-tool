@@ -1,6 +1,5 @@
 import { getRepoCommits, getRepoContributors } from './githubService';
 
-// Example analytics functions
 export const getCommitStats = (commits: any[]) => {
   return {
     totalCommits: commits.length,
@@ -16,6 +15,8 @@ export const getContributorStats = (contributors: any[]) => {
     // Add more statistics as needed
   };
 };
+
+
 
 export const generateInsights = async (owner: string, repo: string) => {
   try {

@@ -45,7 +45,7 @@ const run = async () => {
       } else {
         console.error('Unsupported export format. Use "csv" or "json".');
       }
-      // Generate and display insights
+      
       const insights = await generateInsights(options.owner, options.repo);
       console.log('Repository Insights:', insights);
     }
