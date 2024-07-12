@@ -24,48 +24,48 @@ This tool allows you to fetch and analyze data from GitHub repositories. You can
 ## Usage
 ### Fetching Data
 #### Fetching Repository Details
-    ```bash
-    npx ts-node src/index.ts --owner <owner> --repo <repo> --details
-    ```
+```bash
+npx ts-node src/index.ts --owner <owner> --repo <repo> --details
+```
 
 #### Fetching Repository Contributors
 ```bash
-    npx ts-node src/index.ts --owner <owner> --repo <repo> --contributors
+npx ts-node src/index.ts --owner <owner> --repo <repo> --contributors
 ```
 
 #### Fetching Repository Issues
-    ```bash
-    npx ts-node src/index.ts --owner <owner> --repo <repo> --issues
-    ```
+```bash
+npx ts-node src/index.ts --owner <owner> --repo <repo> --issues
+```
 #### Fetching Repository Commit History
-    ```bash
-    npx ts-node src/index.ts --owner <owner> --repo <repo> --commits
-    ```
+```bash
+npx ts-node src/index.ts --owner <owner> --repo <repo> --commits
+```
 #### Fetching Multiple Data Types Simultaneously
-    ```bash
+```bash
     npx ts-node src/index.ts --owner <owner> --repo <repo> --details --contributors --issues --commits
-    ```
+```
 ## Exporting Data
 ### Exporting to CSV
-    ```bash
-    npx ts-node src/index.ts --owner <owner> --repo <repo> --details --export output.csv
-    ```
+```bash
+npx ts-node src/index.ts --owner <owner> --repo <repo> --details --export output.csv
+```
 ### Exporting to Json
-    ```bash
-    npx ts-node src/index.ts --owner <owner> --repo <repo> --details --export json
-    ```
+```bash
+npx ts-node src/index.ts --owner <owner> --repo <repo> --details --export json
+```
 ## Generating Insights
 ### Generating Insights
 #### Exporting to CSV
-    ```bash
-    npx ts-node src/index.ts --owner <owner> --repo <repo> --insights
-    ```
+```bash
+npx ts-node src/index.ts --owner <owner> --repo <repo> --insights
+```
 
 ## API Endpoint
 #### The tool uses GitHub's API endpoint:
-    ```bash
-    https://api.github.com
-    ```
+```bash
+https://api.github.com
+```
 ## Additional Commands
 #### Linting TypeScript Files
 ```bash
