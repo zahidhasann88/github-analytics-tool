@@ -29,9 +29,9 @@ This tool allows you to fetch and analyze data from GitHub repositories. You can
     ```
 
 #### Fetching Repository Contributors
-    ```bash
+```bash
     npx ts-node src/index.ts --owner <owner> --repo <repo> --contributors
-    ```
+```
 
 #### Fetching Repository Issues
     ```bash
