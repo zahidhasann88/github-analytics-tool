@@ -2,7 +2,8 @@ import { Command } from 'commander';
 import { config } from 'dotenv';
 import axios from 'axios';
 import { getRepoDetails, getRepoContributors, getRepoCommits, getRepoIssues } from './githubService';
-import { exportToCSV, exportToJSON, generateInsights } from './fileOperations';
+import { exportToCSV, exportToJSON } from './fileOperations';
+import { generateInsights } from './insights';
 
 config();
 

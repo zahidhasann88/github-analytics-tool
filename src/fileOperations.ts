@@ -1,5 +1,4 @@
 import { promises as fs } from 'fs';
-import { getRepoCommits, getRepoContributors } from './githubService';
 
 const convertToCSV = (data: any[]): string => {
   try {
@@ -46,34 +45,4 @@ export const exportToJSON = async (data: any, filename: string) => {
     console.error('Error exporting to JSON:', error);
     throw error;
   }
-};
-// Example analytics functions
-export const getCommitStats = (commits: any[]) => {
-  return {
-    totalCommits: commits.length,
-    // Add more statistics as needed
-  };
-};
-
-export const getContributorStats = (contributors: any[]) => {
-  const totalContributors = contributors.length;
-  // Calculate percentages or other insights
-  return {
-    totalContributors,
-    // Add more statistics as needed
-  };
-};
-
-export const generateInsights = async (owner: string, repo: string) => {
-  const commits = await getRepoCommits(owner, repo);
-  const contributors = await getRepoContributors(owner, repo);
-
-  const commitStats = getCommitStats(commits);
-  const contributorStats = getContributorStats(contributors);
-
-  return {
-    commitStats,
-    contributorStats,
-    // Add more insights as needed
-  };
 };
