@@ -16,8 +16,6 @@ export const getContributorStats = (contributors: any[]) => {
   };
 };
 
-
-
 export const generateInsights = async (owner: string, repo: string) => {
   try {
     const commits = await getRepoCommits(owner, repo);

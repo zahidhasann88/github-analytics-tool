@@ -10,12 +10,12 @@ const convertToCSV = (data: any[]): string => {
 
     const csvContent = [
       headers.join(','),
-      ...data.map(obj => {
+      ...data.map((obj) => {
         if (!obj) {
           throw new Error('Invalid object found in data array');
         }
-        return headers.map(header => obj[header] ?? '').join(',');
-      })
+        return headers.map((header) => obj[header] ?? '').join(',');
+      }),
     ].join('\n');
 
     return csvContent;

@@ -1,7 +1,12 @@
 import { Command } from 'commander';
 import { config } from 'dotenv';
 import axios from 'axios';
-import { getRepoDetails, getRepoContributors, getRepoCommits, getRepoIssues } from './githubService';
+import {
+  getRepoDetails,
+  getRepoContributors,
+  getRepoCommits,
+  getRepoIssues,
+} from './githubService';
 import { exportToCSV, exportToJSON } from './fileOperations';
 import { generateInsights } from './insights';
 
@@ -45,7 +50,7 @@ const run = async () => {
       } else {
         console.error('Unsupported export format. Use "csv" or "json".');
       }
-      
+
       const insights = await generateInsights(options.owner, options.repo);
       console.log('Repository Insights:', insights);
     }
@@ -90,7 +95,6 @@ const run = async () => {
       const insights = await generateInsights(options.owner, options.repo);
       console.log('Repository Insights:', insights);
     }
-
   } catch (error) {
     if (error instanceof Error) {
       console.error('Error:', error.message);
