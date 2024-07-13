@@ -43,7 +43,7 @@ npx ts-node src/index.ts --owner <owner> --repo <repo> --commits
 ```
 #### Fetching Multiple Data Types Simultaneously
 ```bash
-    npx ts-node src/index.ts --owner <owner> --repo <repo> --details --contributors --issues --commits
+npx ts-node src/index.ts --owner <owner> --repo <repo> --details --contributors --issues --commits
 ```
 ## Exporting Data
 ### Exporting to CSV
